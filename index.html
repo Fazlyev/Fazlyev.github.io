@@ -229,38 +229,8 @@
 <input type="reset" name="ochistit" value="Очистить">
     </form>
 
-<h3>Алгоритмическая задача:</h3>
-Вводится три числа и программа вычисляет их произведение, если первое число меньше 100, иначе программа вычисляет сумму чисел!
-<form id="frm1" action="../action_page.php">
-    <input type="number" name="1" placeholder="first number"><br>
-    <input type="number" name="2" placeholder="second number"><br>
-    <input type="number" name="3" placeholder="third number"><br>
-  </form> 
-  <button onclick="myFunction()">Try it</button>
-  
-<script>
-  function myFunction() {
-    var x = document.getElementById("frm1");
-    var pr = 1;
-    var sum=0;
-    if (x.elements[0].value<100){
-    var i;
-    for (i = 0; i < x.length ;i++) {
-      pr *= x.elements[i].value;
-    }
-    document.getElementById("demo").innerHTML = pr;}    
-    else {
-    var j;
-    for (j = 0; j < x.length ;j++) {
-      sum += Number(x.elements[j].value);
-    }
-    document.getElementById("demo").innerHTML = sum;}
-  }
-</script>
 
-<p id="demo"></p>
-
-    
+<h2>Рассчитайте стоимость вашего заказа:<h2>    
 <h4>Товар 1
     <img src="том ям.jpg" width="100%">
 <form id="1">
