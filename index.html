@@ -220,10 +220,148 @@
 <h3>Электронная книга отзывов:</h3>
     <form action="data.php">
 Ваши впечатления от посещения данного заведения:<br>
-    <input type="text" name="name" size=”15” maxlength=”20” value="" ><br>
+    <input type="text" name="name" size=”15” maxlength=”20” placeholder="Впечатления" ><br>
+    <input type="number" name="age" size=”15” maxlength=”20” placeholder="Возраст" ><br>
+    <input type="radio" id="option1" name="option" value="Option 1"> Male
+    <input type="radio" id="option2" name="option" value="Option 2"> Female
+  
 <input type="submit" name="otpravit" value="Отправить">
 <input type="reset" name="ochistit" value="Очистить">
     </form>
+
+<h3>Алгоритмическая задача:</h3>
+Вводится три числа и программа вычисляет их произведение, если первое число меньше 100, иначе программа вычисляет сумму чисел!
+<form id="frm1" action="../action_page.php">
+    <input type="number" name="1" placeholder="first number"><br>
+    <input type="number" name="2" placeholder="second number"><br>
+    <input type="number" name="3" placeholder="third number"><br>
+  </form> 
+  <button onclick="myFunction()">Try it</button>
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("frm1");
+    var pr = 1;
+    var sum=0;
+    if (x.elements[0].value<100){
+    var i;
+    for (i = 0; i < x.length ;i++) {
+      pr *= x.elements[i].value;
+    }
+    document.getElementById("demo").innerHTML = pr;}    
+    else {
+    var j;
+    for (j = 0; j < x.length ;j++) {
+      sum += Number(x.elements[j].value);
+    }
+    document.getElementById("demo").innerHTML = sum;}
+  }
+</script>
+
+<p id="demo"></p>
+
+    
+<h4>Товар 1
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="1">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 2
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+    <form id="2">
+        <input type="number" name="1" placeholder="сколько блюд"><br>
+    </form>
+</h4>
+
+<h4>Товар 3
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="3">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 4
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="4">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 5
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="5">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 6
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="6">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 7
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="7">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 8
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="8">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 9
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="9">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+
+<h4>Товар 10
+    <img src="C:\Users\fazly\Downloads\Pycharm\VSC\Images\том ям.jpg" width="100%">
+<form id="10">
+    <input type="number" name="1" placeholder="сколько блюд"><br>
+</form>
+</h4>
+</div>
+
+<style>
+    h4{
+    width: 10%;
+    background: green;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    display: inline-block;    
+    }
+</style>
+
+<button onclick="price()">Узнайте сумму заказа!</button>
+
+<script>
+    function price() {
+      var x1 = document.getElementById("1").elements[0].value;
+      var x2 = document.getElementById("2").elements[0].value;
+      var x3 = document.getElementById("3").elements[0].value;
+      var x4 = document.getElementById("4").elements[0].value;
+      var x5 = document.getElementById("5").elements[0].value;
+      var x6 = document.getElementById("6").elements[0].value;
+      var x7 = document.getElementById("7").elements[0].value;
+      var x8 = document.getElementById("8").elements[0].value;
+      var x9 = document.getElementById("9").elements[0].value;
+      var x10 = document.getElementById("10").elements[0].value;
+      var sum=(Number(x1)+Number(x2)+Number(x3)+Number(x4)+Number(x5)+Number(x6)+Number(x7)+Number(x8)+Number(x9)+Number(x10))*100;
+      document.getElementById("price").innerHTML = "Итоговая стоимость вашего заказа "+sum+"!";
+    }
+</script>
+<p id="price"></p>
 <h3>Перейти к другим разделам сайта:</h3>
     <a href="#главная">Главная</a></br>
     <a href="#меню">Меню</a></br>
